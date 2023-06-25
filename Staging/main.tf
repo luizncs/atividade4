@@ -9,3 +9,8 @@ terraform {
 provider "azurerm" {
     features {}
 }
+
+resource "azurerm_resource_group" "dafault" {
+    name = "rg-tae-iac"
+    location = "eastus"
+}
